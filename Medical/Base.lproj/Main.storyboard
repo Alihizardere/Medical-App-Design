@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWE-Rg-zU9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePage" customModule="Medical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbw-jo-HHf">
+                                <rect key="frame" x="16" y="108" width="376" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Your Desire Health Solution" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjg-uD-nWp">
+                                        <rect key="frame" x="16" y="16" width="160" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="nMd-zo-0Y7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                        <color key="textColor" name="yaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yKR-1E-5wf">
+                                        <rect key="frame" x="330" y="25" width="30" height="29.5"/>
+                                        <color key="tintColor" name="yaziRenk2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="aha-R8-IcX"/>
+                                            <constraint firstAttribute="height" constant="30" id="al9-8e-EQm"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="viewAcikRenk"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3Qb-uF-Ifv"/>
+                                    <constraint firstAttribute="trailing" secondItem="yKR-1E-5wf" secondAttribute="trailing" constant="16" id="3R1-0Y-Z88"/>
+                                    <constraint firstItem="yKR-1E-5wf" firstAttribute="centerY" secondItem="Tbw-jo-HHf" secondAttribute="centerY" id="EOg-6u-J0d"/>
+                                    <constraint firstItem="Wjg-uD-nWp" firstAttribute="centerY" secondItem="Tbw-jo-HHf" secondAttribute="centerY" id="IYz-cM-6pS"/>
+                                    <constraint firstItem="Wjg-uD-nWp" firstAttribute="leading" secondItem="Tbw-jo-HHf" secondAttribute="leading" constant="16" id="Iz5-DB-BEU"/>
+                                    <constraint firstItem="Wjg-uD-nWp" firstAttribute="top" secondItem="Tbw-jo-HHf" secondAttribute="top" constant="16" id="Mwo-Cf-Moe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <searchBar contentMode="redraw" barStyle="blackTranslucent" placeholder="Search doctor, drugs, articles" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-Wv-OMk">
+                                <rect key="frame" x="16" y="212" width="371" height="72"/>
+                                <color key="backgroundColor" name="anaRenk"/>
+                                <color key="barTintColor" name="viewAcikRenk"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="run-RO-tiI"/>
+                                </connections>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="g5Z-tD-dby">
+                                <rect key="frame" x="16" y="308" width="376" height="55"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stethoscope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="obn-4V-sGP">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                        <color key="tintColor" name="anaRenk"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross.case" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BBs-td-cT4">
+                                        <rect key="frame" x="107" y="0.5" width="55" height="53.5"/>
+                                        <color key="tintColor" name="anaRenk"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="N9G-br-KOp"/>
+                                            <constraint firstAttribute="width" constant="55" id="i6d-YA-Wab"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pills.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I1Y-dN-M8f">
+                                        <rect key="frame" x="214" y="0.0" width="55" height="54.5"/>
+                                        <color key="tintColor" name="anaRenk"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="d5f-oA-dGR"/>
+                                            <constraint firstAttribute="width" constant="55" id="duG-I8-eC7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="29r-Kz-V1U">
+                                        <rect key="frame" x="321" y="0.0" width="55" height="55"/>
+                                        <color key="tintColor" name="anaRenk"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="2qt-PC-1CM"/>
+                                            <constraint firstAttribute="height" constant="55" id="Aqo-og-GO6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="8j0-2e-40N"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="ebQ-kU-961">
+                                <rect key="frame" x="16" y="375" width="376" height="21.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6Y-uO-2ly">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" name="yaziRenk3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ca-5l-zhO">
+                                        <rect key="frame" x="90" y="0.0" width="87" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" name="yaziRenk3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drugs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeV-Nw-vvD">
+                                        <rect key="frame" x="211.5" y="0.0" width="52" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" name="yaziRenk3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5m-b4-Xak">
+                                        <rect key="frame" x="304" y="0.0" width="72" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" name="yaziRenk3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRx-pM-DZP">
+                                <rect key="frame" x="16" y="428.5" width="376" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Early protection for your family health" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rku-YB-J4H">
+                                        <rect key="frame" x="8" y="32" width="186" height="45"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" name="yaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doktor3" translatesAutoresizingMaskIntoConstraints="NO" id="uzx-0j-g3s">
+                                        <rect key="frame" x="210" y="16" width="150" height="168"/>
+                                        <color key="tintColor" name="viewAcikRenk"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="fEF-RY-rAo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3V-Jc-D9j">
+                                        <rect key="frame" x="55" y="101" width="100" height="40"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="I3y-cj-8eE"/>
+                                        </constraints>
+                                        <color key="tintColor" name="yaziRenk1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Learn more">
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="viewAcikRenk"/>
+                                <constraints>
+                                    <constraint firstItem="rku-YB-J4H" firstAttribute="top" secondItem="wRx-pM-DZP" secondAttribute="top" constant="32" id="646-wv-uPO"/>
+                                    <constraint firstItem="V3V-Jc-D9j" firstAttribute="leading" secondItem="wRx-pM-DZP" secondAttribute="leading" constant="55" id="ALq-z7-Y10"/>
+                                    <constraint firstItem="V3V-Jc-D9j" firstAttribute="top" secondItem="rku-YB-J4H" secondAttribute="bottom" constant="24" id="P4D-qX-rJI"/>
+                                    <constraint firstItem="uzx-0j-g3s" firstAttribute="top" secondItem="wRx-pM-DZP" secondAttribute="top" constant="16" id="Xna-hR-s4f"/>
+                                    <constraint firstAttribute="bottom" secondItem="uzx-0j-g3s" secondAttribute="bottom" constant="16" id="Xu4-ge-TyP"/>
+                                    <constraint firstItem="uzx-0j-g3s" firstAttribute="leading" secondItem="rku-YB-J4H" secondAttribute="trailing" constant="16" id="Z9B-F9-qAy"/>
+                                    <constraint firstItem="rku-YB-J4H" firstAttribute="leading" secondItem="wRx-pM-DZP" secondAttribute="leading" constant="8" id="ap2-H9-gFX"/>
+                                    <constraint firstAttribute="trailing" secondItem="uzx-0j-g3s" secondAttribute="trailing" constant="16" id="cga-AE-UUr"/>
+                                    <constraint firstItem="uzx-0j-g3s" firstAttribute="leading" secondItem="V3V-Jc-D9j" secondAttribute="trailing" constant="55" id="fpf-Bq-pYn"/>
+                                    <constraint firstItem="uzx-0j-g3s" firstAttribute="leading" secondItem="rku-YB-J4H" secondAttribute="trailing" constant="16" id="nEh-rc-61L"/>
+                                    <constraint firstAttribute="height" constant="200" id="zkv-LM-8FI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Doctors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgh-VI-7Aa">
+                                <rect key="frame" x="16" y="644.5" width="104" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" name="yaziRenk2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDX-RR-cJr">
+                                <rect key="frame" x="310.5" y="638" width="81.5" height="34.5"/>
+                                <color key="tintColor" name="anaRenk"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="See all">
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LSG-Ey-FtO">
+                                <rect key="frame" x="16" y="682" width="376" height="180"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSh-Uh-yBV">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doktor2" translatesAutoresizingMaskIntoConstraints="NO" id="MjR-PU-hgF">
+                                                <rect key="frame" x="40" y="0.0" width="100" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="e8h-1D-DNG"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Maria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ap2-Lx-XHk">
+                                                <rect key="frame" x="63" y="128" width="54.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="yaziRenk2"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OL3-Vt-W1w">
+                                                <rect key="frame" x="8" y="152" width="45" height="20"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RUq-tu-PSh">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
+                                                        <color key="tintColor" name="anaRenk"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUr-eh-0f4">
+                                                        <rect key="frame" x="23" y="0.0" width="22" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="yaziRenk2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sI1-tv-E1l">
+                                                <rect key="frame" x="81" y="152" width="91" height="20"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-tO-RWJ">
+                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
+                                                        <color key="tintColor" name="anaRenk"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="800m away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW8-P1-ZtT">
+                                                        <rect key="frame" x="21" y="0.0" width="70" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="yaziRenk2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="viewAcikRenk"/>
+                                        <constraints>
+                                            <constraint firstItem="MjR-PU-hgF" firstAttribute="centerX" secondItem="PSh-Uh-yBV" secondAttribute="centerX" id="8kH-p7-pQn"/>
+                                            <constraint firstItem="OL3-Vt-W1w" firstAttribute="leading" secondItem="PSh-Uh-yBV" secondAttribute="leading" constant="8" id="H21-W8-hef"/>
+                                            <constraint firstAttribute="bottom" secondItem="OL3-Vt-W1w" secondAttribute="bottom" constant="8" id="LYY-7T-WDO"/>
+                                            <constraint firstItem="MjR-PU-hgF" firstAttribute="leading" secondItem="PSh-Uh-yBV" secondAttribute="leading" constant="40" id="REP-k0-SvE"/>
+                                            <constraint firstItem="Ap2-Lx-XHk" firstAttribute="top" secondItem="MjR-PU-hgF" secondAttribute="bottom" constant="8" id="RP5-XI-ajh"/>
+                                            <constraint firstItem="MjR-PU-hgF" firstAttribute="top" secondItem="PSh-Uh-yBV" secondAttribute="top" id="XXy-3h-CZl"/>
+                                            <constraint firstItem="Ap2-Lx-XHk" firstAttribute="centerX" secondItem="PSh-Uh-yBV" secondAttribute="centerX" id="dJZ-70-e3o"/>
+                                            <constraint firstItem="sI1-tv-E1l" firstAttribute="top" secondItem="Ap2-Lx-XHk" secondAttribute="bottom" constant="8" id="l5F-bk-RlF"/>
+                                            <constraint firstAttribute="trailing" secondItem="MjR-PU-hgF" secondAttribute="trailing" constant="40" id="lH2-vH-Mne"/>
+                                            <constraint firstAttribute="bottom" secondItem="sI1-tv-E1l" secondAttribute="bottom" constant="8" id="xGT-JF-QGZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="sI1-tv-E1l" secondAttribute="trailing" constant="8" id="xin-cI-tR5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txX-ah-rzi">
+                                        <rect key="frame" x="196" y="0.0" width="180" height="180"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doktor1" translatesAutoresizingMaskIntoConstraints="NO" id="wsL-0z-557">
+                                                <rect key="frame" x="40" y="0.0" width="100" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="3AA-DS-THv"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Marcus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izG-Wk-mUI">
+                                                <rect key="frame" x="57.5" y="128" width="65.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="yaziRenk2"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-KO-3gj">
+                                                <rect key="frame" x="8" y="152" width="45" height="20"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n3l-QG-QvT">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
+                                                        <color key="tintColor" name="anaRenk"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-6C-A7N">
+                                                        <rect key="frame" x="23" y="0.0" width="22" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="yaziRenk2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="PdP-Bf-1WU">
+                                                <rect key="frame" x="81.5" y="152" width="90.5" height="20"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4v2-AC-9Km">
+                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
+                                                        <color key="tintColor" name="anaRenk"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5km away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmL-Te-bNN">
+                                                        <rect key="frame" x="21" y="0.0" width="69.5" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="yaziRenk2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="viewAcikRenk"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PdP-Bf-1WU" secondAttribute="bottom" constant="8" id="00r-Pu-lC5"/>
+                                            <constraint firstItem="pcH-KO-3gj" firstAttribute="leading" secondItem="txX-ah-rzi" secondAttribute="leading" constant="8" id="DqY-R9-FvG"/>
+                                            <constraint firstAttribute="trailing" secondItem="wsL-0z-557" secondAttribute="trailing" constant="40" id="Lbc-uJ-Q5w"/>
+                                            <constraint firstItem="wsL-0z-557" firstAttribute="centerX" secondItem="txX-ah-rzi" secondAttribute="centerX" id="MkC-hJ-j3K"/>
+                                            <constraint firstItem="wsL-0z-557" firstAttribute="top" secondItem="txX-ah-rzi" secondAttribute="top" id="MrK-2E-BU8"/>
+                                            <constraint firstAttribute="trailing" secondItem="PdP-Bf-1WU" secondAttribute="trailing" constant="8" id="dUf-sm-zqw"/>
+                                            <constraint firstItem="izG-Wk-mUI" firstAttribute="top" secondItem="wsL-0z-557" secondAttribute="bottom" constant="8" id="gGg-2a-rhq"/>
+                                            <constraint firstAttribute="bottom" secondItem="pcH-KO-3gj" secondAttribute="bottom" constant="8" id="kB8-OI-hQT"/>
+                                            <constraint firstItem="PdP-Bf-1WU" firstAttribute="top" secondItem="izG-Wk-mUI" secondAttribute="bottom" constant="8" id="pXN-6y-zgx"/>
+                                            <constraint firstItem="wsL-0z-557" firstAttribute="leading" secondItem="txX-ah-rzi" secondAttribute="leading" constant="40" id="rTK-uf-gKb"/>
+                                            <constraint firstItem="izG-Wk-mUI" firstAttribute="centerX" secondItem="txX-ah-rzi" secondAttribute="centerX" id="sk5-Yz-ERb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="koyuTemaRenk"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g5Z-tD-dby" secondAttribute="trailing" constant="16" id="1Li-E4-BIz"/>
+                            <constraint firstItem="Z1q-Wv-OMk" firstAttribute="top" secondItem="Tbw-jo-HHf" secondAttribute="bottom" constant="24" id="50L-bw-HrD"/>
+                            <constraint firstItem="wRx-pM-DZP" firstAttribute="top" secondItem="ebQ-kU-961" secondAttribute="bottom" constant="32" id="5qb-KL-XR0"/>
+                            <constraint firstItem="g5Z-tD-dby" firstAttribute="top" secondItem="Z1q-Wv-OMk" secondAttribute="bottom" constant="24" id="6bU-he-1ew"/>
+                            <constraint firstItem="Tbw-jo-HHf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="9VU-sD-73D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ebQ-kU-961" secondAttribute="trailing" constant="16" id="9xG-wz-T14"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cDX-RR-cJr" secondAttribute="trailing" constant="16" id="DEa-Q3-01S"/>
+                            <constraint firstItem="Z1q-Wv-OMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="E2d-pI-9ru"/>
+                            <constraint firstItem="ebQ-kU-961" firstAttribute="top" secondItem="g5Z-tD-dby" secondAttribute="bottom" constant="12" id="EKG-CY-MQ2"/>
+                            <constraint firstItem="wRx-pM-DZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Gj6-3B-dcK"/>
+                            <constraint firstItem="g5Z-tD-dby" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hki-Aa-5bF"/>
+                            <constraint firstItem="cgh-VI-7Aa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NBg-3O-g3W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wRx-pM-DZP" secondAttribute="trailing" constant="16" id="Ofh-ZM-d7K"/>
+                            <constraint firstItem="cDX-RR-cJr" firstAttribute="centerY" secondItem="cgh-VI-7Aa" secondAttribute="centerY" id="Oof-24-bxN"/>
+                            <constraint firstItem="Tbw-jo-HHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qhi-kj-MpS"/>
+                            <constraint firstItem="cgh-VI-7Aa" firstAttribute="top" secondItem="wRx-pM-DZP" secondAttribute="bottom" constant="16" id="RvS-kX-S0H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tbw-jo-HHf" secondAttribute="trailing" constant="16" id="T7M-ug-IcS"/>
+                            <constraint firstItem="LSG-Ey-FtO" firstAttribute="top" secondItem="cgh-VI-7Aa" secondAttribute="bottom" constant="16" id="aUb-rO-gU7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LSG-Ey-FtO" secondAttribute="trailing" constant="16" id="e06-PG-Av7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LSG-Ey-FtO" secondAttribute="bottom" id="fZo-jI-d71"/>
+                            <constraint firstItem="LSG-Ey-FtO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oZn-yS-TKj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z1q-Wv-OMk" secondAttribute="trailing" constant="21" id="rYg-Xc-B0B"/>
+                            <constraint firstItem="ebQ-kU-961" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zUt-lu-Q0y"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y1B-BU-bRf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="4.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SNg-C6-WZv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eWE-Rg-zU9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="00x-l4-e22">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1yg-R0-vlI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xu7-eC-eN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="building" catalog="system" width="110" height="128"/>
+        <image name="cross.case" catalog="system" width="128" height="100"/>
+        <image name="doktor1" width="1791" height="2239"/>
+        <image name="doktor2" width="2240" height="3360"/>
+        <image name="doktor3" width="1856" height="2784"/>
+        <image name="location.circle" catalog="system" width="128" height="123"/>
+        <image name="pills.fill" catalog="system" width="128" height="104"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="stethoscope" catalog="system" width="128" height="101"/>
+        <namedColor name="anaRenk">
+            <color red="0.12957080214483049" green="0.69927793560606055" blue="0.19364539821131074" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="koyuTemaRenk">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="viewAcikRenk">
+            <color red="0.9137254901960784" green="0.95294117647058818" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk2">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk3">
+            <color red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Pharmacy"; ObjectID = "1Ca-5l-zhO"; */
+"1Ca-5l-zhO.text" = "Eczane";
+
+/* Class = "UILabel"; text = "4.7"; ObjectID = "9zb-6C-A7N"; */
+"9zb-6C-A7N.text" = "4.7";
+
+/* Class = "UILabel"; text = "Dr. Maria"; ObjectID = "Ap2-Lx-XHk"; */
+"Ap2-Lx-XHk.text" = "Dr. Maria";
+
+/* Class = "UILabel"; text = "Hospital"; ObjectID = "M5m-b4-Xak"; */
+"M5m-b4-Xak.text" = "Hastane";
+
+/* Class = "UILabel"; text = "Drugs"; ObjectID = "UeV-Nw-vvD"; */
+"UeV-Nw-vvD.text" = "İlaçlar";
+
+/* Class = "UIButton"; configuration.title = "Learn more"; ObjectID = "V3V-Jc-D9j"; */
+"V3V-Jc-D9j.configuration.title" = "Daha fazla";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "V3V-Jc-D9j"; */
+"V3V-Jc-D9j.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Find Your Desire Health Solution"; ObjectID = "Wjg-uD-nWp"; */
+"Wjg-uD-nWp.text" = "Sağlık Sorunu Çözümünüzü Bulun";
+
+/* Class = "UISearchBar"; placeholder = "Search doctor, drugs, articles"; ObjectID = "Z1q-Wv-OMk"; */
+"Z1q-Wv-OMk.placeholder" = "Doktor, ilaç, makale ara";
+
+/* Class = "UIButton"; configuration.title = "See all"; ObjectID = "cDX-RR-cJr"; */
+"cDX-RR-cJr.configuration.title" = "Tümünü Gör";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cDX-RR-cJr"; */
+"cDX-RR-cJr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Top Doctors"; ObjectID = "cgh-VI-7Aa"; */
+"cgh-VI-7Aa.text" = "En iyi doktorlar";
+
+/* Class = "UILabel"; text = "Dr. Marcus"; ObjectID = "izG-Wk-mUI"; */
+"izG-Wk-mUI.text" = "Dr. Marcus";
+
+/* Class = "UILabel"; text = "1.5km away"; ObjectID = "jmL-Te-bNN"; */
+"jmL-Te-bNN.text" = "1.5km uzakta";
+
+/* Class = "UILabel"; text = "800m away"; ObjectID = "kW8-P1-ZtT"; */
+"kW8-P1-ZtT.text" = "800m uzakta";
+
+/* Class = "UILabel"; text = "Early protection for your family health"; ObjectID = "rku-YB-J4H"; */
+"rku-YB-J4H.text" = "Aile Sağlığınız İçin Erken Koruma";
+
+/* Class = "UILabel"; text = "Doctor"; ObjectID = "s6Y-uO-2ly"; */
+"s6Y-uO-2ly.text" = "Doktor";
+
+/* Class = "UILabel"; text = "4.7"; ObjectID = "vUr-eh-0f4"; */
+"vUr-eh-0f4.text" = "4.7";
